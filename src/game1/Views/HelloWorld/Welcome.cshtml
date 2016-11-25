@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+@model List<String>
+<h2>Welcome to Winnie's app</h2>
+
+<p>This is my first web app.</p>
+
+@foreach(var element in Model)
+{
+    <li>@ViewData["Message"]</li>
+    <pre>@Html.DisplayFor(m=>element)</pre>
+}
